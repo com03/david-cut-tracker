@@ -1,0 +1,17 @@
+{
+  "name": "David Cut Tracker",
+  "short_name": "Cut Tracker",
+  "description": "Offline college cut tracker for meals, budget, lifting, steps, freezer inventory, and daily logs.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f8f1",
+  "theme_color": "#168a55",
+  "icons": [
+    {
+      "src": "app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
