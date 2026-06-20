@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="David Cut Tracker icon">
-  <rect width="512" height="512" rx="112" fill="#168a55"/>
-  <path d="M116 330c32 48 78 72 140 72s108-24 140-72" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round"/>
-  <path d="M154 258h204" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round"/>
-  <path d="M190 180h132" fill="none" stroke="#e3f6e9" stroke-width="34" stroke-linecap="round"/>
-  <circle cx="256" cy="256" r="184" fill="none" stroke="#83c341" stroke-width="24" opacity=".45"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Cut Tracker avocado icon">
+  <rect width="128" height="128" rx="30" fill="#f3fbef"/>
+  <path d="M64 10c24 0 44 31 44 63 0 27-18 45-44 45S20 100 20 73c0-32 20-63 44-63z" fill="#166f35"/>
+  <path d="M64 22c18 0 33 25 33 51 0 21-14 34-33 34S31 94 31 73c0-26 15-51 33-51z" fill="#b9ef67"/>
+  <circle cx="64" cy="78" r="18" fill="#8b5426"/>
+  <circle cx="52" cy="55" r="4" fill="#17211a"/>
+  <circle cx="76" cy="55" r="4" fill="#17211a"/>
+  <path d="M56 64c5 5 11 5 16 0" fill="none" stroke="#17211a" stroke-width="4" stroke-linecap="round"/>
 </svg>
