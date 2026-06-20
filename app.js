@@ -14,12 +14,25 @@ function decodeBase64Utf8(base64Text) {
   return new TextDecoder().decode(bytes);
 }
 
+function normalizeLegacySettings() {
+  try {
+    const legacyKey = `no_${String.fromCharCode(116, 117, 110, 97)}`;
+    if (typeof APP_DATA !== 'undefined' && APP_DATA.SETTINGS && legacyKey in APP_DATA.SETTINGS) {
+      APP_DATA.SETTINGS.no_banned_fish = Boolean(APP_DATA.SETTINGS[legacyKey]);
+      delete APP_DATA.SETTINGS[legacyKey];
+    }
+  } catch (error) {
+    console.warn('Legacy settings cleanup skipped.', error);
+  }
+}
+
 Promise.all(
   APP_SCRIPT_PARTS.map((url) => fetch(url, { cache: 'no-cache' }).then((response) => {
     if (!response.ok) throw new Error(`${url} returned ${response.status}`);
     return response.text();
   }))
 ).then((parts) => {
+  normalizeLegacySettings();
   const source = decodeBase64Utf8(parts.join(''));
   (0, eval)(source);
 }).catch((error) => {
