@@ -1,4 +1,4 @@
-const CACHE_NAME = 'david-cut-tracker-v7';
+const CACHE_NAME = 'david-cut-tracker-v8';
 const APP_ASSETS = [
   './',
   './index.html',
